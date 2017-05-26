@@ -1,0 +1,9 @@
+/* Коментарии */
+
+
+/* Селектор тэгов */
+
+body {
+    background: url(../images/ac.jpg) fixed no-repeat;
+    color: white;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <meta http-equiv="refresh" content="0;http://skorbota-dp.com.ua">
+    <title>Создаем модальное окно на HTML5 и CSS3</title>
+    <meta charset="utf-8">
+
+    <style>
+        #parent_popup {
+            background-color: rgba(0, 0, 0, 0.8);
+            display: none;
+            position: fixed;
+            z-index: 99999;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+        
+        #popup {
+            background: #333333;
+            width: 520px;
+            margin: 10% auto;
+            padding: 5px 20px 13px 20px;
+            border: 10px solid #ff600a;
+            position: relative;
+            -webkit-box-shadow: 0px 0px 20px #000;
+            -moz-box-shadow: 0px 0px 20px #000;
+            box-shadow: 0px 0px 20px #000;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            border-radius: 15px;
+        }
+        
+        .close {
+            background-color: rgba(0, 0, 0, 0.8);
+            border: 2px solid #ccc;
+            height: 24px;
+            line-height: 24px;
+            position: absolute;
+            right: -24px;
+            cursor: pointer;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 14px;
+            text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+            top: -24px;
+            width: 24px;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            -ms-border-radius: 15px;
+            -o-border-radius: 15px;
+            border-radius: 15px;
+            -moz-box-shadow: 1px 1px 3px #000;
+            -webkit-box-shadow: 1px 1px 3px #000;
+            box-shadow: 1px 1px 3px #000;
+        }
+        
+        .close:hover {
+            background-color: rgba(0, 122, 200, 0.8);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="parent_popup">
+        <div id="popup">
+
+            <p style="text-align:center"><span style="font-family:verdana,geneva,sans-serif"><img alt="" src="http://skorbota-dp.com.ua/image/catalog//logo_theme.png" style="height:160px; width:140px" /></span></p>
+            <p style="text-align:center"><span style="font-size:32px"><span style="font-family:verdana,geneva,sans-serif"><span style="color:#A7E2FF"><strong>МЫ ПЕРЕЕЗЖАЕМ!</strong></span></span>
+                </span>
+            </p>
+            <p style="text-align:center"><span style="color:#FFFFFF"><span style="font-family:verdana,geneva,sans-serif"><strong>Ч</strong><span style="font-size:18px">ерез 5 секунд Вы будете перенаправлены на новый<br />
+сайт/интернет-магазин ЧП &quot;Скорбота&quot;,&nbsp;</span></span><span style="font-family:verdana,geneva,sans-serif; font-size:18px">который находится по адресу:</span></span>
+            </p>
+            <p style="text-align:center"><span style="font-size:26px"><span style="font-family:georgia,serif"><a href="http://skorbota-dp.com.ua"><span style="color:#FFFF00">www.skorbota-dp.com.ua</span></a>
+                </span>
+                </span>
+            </p>
+
+        </div>
+        <script type="text/javascript">
+            var delay_popup = 10;
+            setTimeout("document.getElementById('parent_popup').style.display='block'", delay_popup);
+        </script>
+
+</body>
+</body>
+
+</html>
